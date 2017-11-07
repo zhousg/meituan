@@ -99,6 +99,7 @@ body{
     margin: 0 auto;
     color: #fff;
     font-size: 24px;
+    margin-bottom: 5px;
 }
 .mt_nav .indicator{
     position: absolute;
