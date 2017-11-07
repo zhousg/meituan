@@ -1,0 +1,39 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-size: 14px;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+ul {
+    list-style: none;
+}
+button,
+input,
+textarea{
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+    resize: none;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    clear: both;
+}
