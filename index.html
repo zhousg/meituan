@@ -239,4 +239,11 @@
     </footer>
 </body>
 <script src="assets/js/index.js"></script>
+<script>
+    navigator.geolocation.getCurrentPosition(function (position) {
+        alert(position);
+    }, function (error) {
+        alert(error);
+    })
+</script>
 </html>
