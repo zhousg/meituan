@@ -25,7 +25,7 @@ var initNav = function () {
         distanceX = moveX - startX;
         if ((currentX + distanceX) <= max && (currentX + distanceX) >= min) {
             wrapper.style.transition = 'none';
-            wrapper.style.transform = 'translateX(' + (currentX + distanceX) + 'px)';
+            wrapper.style.transform = 'webkitTranslateX(' + (currentX + distanceX) + 'px)';
         }
     });
     wrapper.addEventListener('touchend', function (e) {
@@ -43,7 +43,7 @@ var initNav = function () {
                 document.querySelectorAll('.indicator li')[1].classList.add('now');
             }
             wrapper.style.transition = 'all 0.4s';
-            wrapper.style.transform = 'translateX(' + currentX + 'px)';
+            wrapper.style.transform = 'webkitTranslateX(' + currentX + 'px)';
         }
     });
 }

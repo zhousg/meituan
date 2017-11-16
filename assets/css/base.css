@@ -27,6 +27,7 @@ textarea{
 a{
     color: #333;
     text-decoration: none;
+    font-size: 14px;
 }
 .clearfix::before,
 .clearfix::after{
