@@ -26,6 +26,7 @@ var initNav = function () {
         if ((currentX + distanceX) <= max && (currentX + distanceX) >= min) {
             wrapper.style.transition = 'none';
             wrapper.style.transform = 'webkitTranslateX(' + (currentX + distanceX) + 'px)';
+            wrapper.style.transform = 'translateX(' + (currentX + distanceX) + 'px)';
         }
     });
     wrapper.addEventListener('touchend', function (e) {
@@ -44,6 +45,7 @@ var initNav = function () {
             }
             wrapper.style.transition = 'all 0.4s';
             wrapper.style.transform = 'webkitTranslateX(' + currentX + 'px)';
+            wrapper.style.transform = 'translateX(' + currentX + 'px)';
         }
     });
 }
